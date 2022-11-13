@@ -1,0 +1,46 @@
+[
+    {
+        "test_case": "1 - Mov. Receita - Sit. Pago",
+        "tipo_movimentacao": "Receita",
+        "data_movimentacao": "01/11/2022",
+        "data_pagamento": "06/11/2022",
+        "descricao": "1 - Mov. Receita - Sit. Pago",
+        "interessado": "Fco Martins 1",
+        "valor": "50.00",
+        "conta": "Carteira",
+        "situacao": "Pago"
+    },
+    {
+        "test_case": "2 - Mov. Receita - Sit. Pendente",
+        "tipo_movimentacao": "Receita",
+        "data_movimentacao": "02/11/2022",
+        "data_pagamento": "07/11/2022",
+        "descricao": "2 - Mov. Receita - Sit. Pendente",
+        "interessado": "Fco Martins 2",
+        "valor": "40.00",
+        "conta": "Carteira",
+        "situacao": "Pendente"
+    },
+    {
+        "test_case": "3 - Mov. Despesa - Sit. Pago",
+        "tipo_movimentacao": "Despesa",
+        "data_movimentacao": "03/11/2022",
+        "data_pagamento": "08/11/2022",
+        "descricao": "3 - Mov. Despesa - Sit. Pago",
+        "interessado": "Fco Martins 3",
+        "valor": "-30.00",
+        "conta": "Carteira",
+        "situacao": "Pago"
+    },
+    {
+        "test_case": "4 - Mov. Despesa - Sit. Pendente",
+        "tipo_movimentacao": "Despesa",
+        "data_movimentacao": "04/11/2022",
+        "data_pagamento": "09/11/2022",
+        "descricao": "4 - Mov. Despesa - Sit. Pendente",
+        "interessado": "Fco Martins 4",
+        "valor": "-20.00",
+        "conta": "Carteira",
+        "situacao": "Pendente"
+    }
+]

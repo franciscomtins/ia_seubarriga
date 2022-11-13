@@ -1,0 +1,46 @@
+[
+    {
+        "test_case": "1 - Mov. Receita - Sit. Pago",
+        "tipo_movimentacao": "Receita",
+        "data_movimentacao": "",
+        "data_pagamento": "",
+        "descricao": "",
+        "interessado": "",
+        "valor": "",
+        "conta": "",
+        "situacao": "Pago"
+    },
+    {
+        "test_case": "2 - Mov. Receita - Sit. Pendente",
+        "tipo_movimentacao": "Receita",
+        "data_movimentacao": "",
+        "data_pagamento": "",
+        "descricao": "",
+        "interessado": "",
+        "valor": "",
+        "conta": "",
+        "situacao": "Pendente"
+    },
+    {
+        "test_case": "3 - Mov. Despesa - Sit. Pago",
+        "tipo_movimentacao": "Despesa",
+        "data_movimentacao": "",
+        "data_pagamento": "",
+        "descricao": "",
+        "interessado": "",
+        "valor": "",
+        "conta": "",
+        "situacao": "Pago"
+    },
+    {
+        "test_case": "4 - Mov. Despesa - Sit. Pendente",
+        "tipo_movimentacao": "Despesa",
+        "data_movimentacao": "",
+        "data_pagamento": "",
+        "descricao": "",
+        "interessado": "",
+        "valor": "",
+        "conta": "",
+        "situacao": "Pendente"
+    }
+]
