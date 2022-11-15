@@ -10,22 +10,56 @@ ${Movimentacoes_conta}         Carteira
 
 *** Keywords ***
 Prepara ambiente para movimentações
-    Acessar menu        Resumo Mensal
+    ${contas}          Get Json    contas.json
     
-    FOR    ${COUNT}    IN RANGE    1    5
-        Click    xpath=(//a[contains(@href, "/remover")])[1]
-        Wait For Elements State    xpath=//div[contains(text(),"Movimentação removida com sucesso!")]       
+    Acessar menu        Resumo Mensal
+
+    ${adicionar}=   Set Variable    ${1.0}
+    ${contador}=    Get Element Count      xpath=//a[contains(@href, "/remover")]
+    ${limite}=      Evaluate    ${adicionar}+${contador}
+    Log        ${limite}
+    
+
+    ${contem_resumo}=    Run Keyword And Return Status    Get Text    xpath=(//td[.='Movimentos'])[1]    ==    Movimentos
+
+    IF    "${contem_resumo}" == "True"
+        FOR    ${COUNT}    IN RANGE    1    ${limite}
+            Run Keyword And Ignore Error    Click    xpath=(//a[contains(@href, "/remover")])[1]
+            Reload
+        END
+    ELSE
+        Log    Sem resumo a apagar
     END
 
+    Acessar menu                      Contas
+    Selecionar opção                  Listar
+    Verificar se a conta já existe    ${contas["conta_11"]} 
+    Acessar menu                      Contas
+    Selecionar opção                  Adicionar
+    Inserir a conta                   ${contas["conta_11"]} 
+
+
+
 Verificar se a conta já existe
-    [Arguments]    ${conta}
+    [Arguments]         ${conta}
     Acessar menu        Contas
     Selecionar opção    Listar
 
-    ${conta_listada}=    Run Keyword And Return Status    Get Text     xpath=//tbody/tr/td[contains(text(),"${conta}")]    ==    ${conta}    
-    Log    ${conta_listada}
+
+    ${adicionar}=   Set Variable    ${1.0}
+    ${contador}=    Get Element Count      xpath=//a[contains(@href, "/remover")]
+    ${limite}=      Evaluate    ${adicionar}+${contador}
+
+
+    ${conta_listada}=    Run Keyword And Return Status    Get Text     xpath=//tbody/tr/td[contains(text(),"${conta["nome"]}")]    ==    ${conta["nome"]}
     
-    IF    "${conta_listada}"   
-         Click    xpath=(//a[contains(@href, "/remover")])[1]
+    IF    "${conta_listada}" == "True"  
+        FOR    ${COUNT}    IN RANGE    1    ${limite}
+            Run Keyword And Ignore Error    Click    xpath=(//a[contains(@href, "/remover")])[1]  
+            Reload   
+        END
+    ELSE
+        Log    Conta não listada
     END
+
 

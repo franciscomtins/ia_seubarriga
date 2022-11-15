@@ -7,7 +7,7 @@
         "descricao": "1 - Mov. Receita - Sit. Pago",
         "interessado": "Fco Martins 1",
         "valor": "50.00",
-        "conta": "Carteira",
+        "conta": "Movimentos",
         "situacao": "Pago"
     },
     {
@@ -18,7 +18,7 @@
         "descricao": "2 - Mov. Receita - Sit. Pendente",
         "interessado": "Fco Martins 2",
         "valor": "40.00",
-        "conta": "Carteira",
+        "conta": "Movimentos",
         "situacao": "Pendente"
     },
     {
@@ -29,7 +29,7 @@
         "descricao": "3 - Mov. Despesa - Sit. Pago",
         "interessado": "Fco Martins 3",
         "valor": "-30.00",
-        "conta": "Carteira",
+        "conta": "Movimentos",
         "situacao": "Pago"
     },
     {
@@ -40,7 +40,7 @@
         "descricao": "4 - Mov. Despesa - Sit. Pendente",
         "interessado": "Fco Martins 4",
         "valor": "-20.00",
-        "conta": "Carteira",
+        "conta": "Movimentos",
         "situacao": "Pendente"
     }
 ]

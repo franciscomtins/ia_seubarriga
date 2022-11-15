@@ -11,10 +11,11 @@ Suite Teardown    Take Screenshot    Close Browser
 Inserir movimentações com sucesso
 
     Realizar login 
+    Prepara ambiente para movimentações
     Acessar menu        Criar Movimentação
 
     ${movimentacoes}     Get Json    movimentacoes.json   
-    FOR    ${elemento}   IN          @{movimentacoes}
+    FOR    ${elemento}   IN          @{movimentacoes} 
 
         seleciono o tipo de movimentação     ${elemento["tipo_movimentacao"]}
         Informo a data de movimentação       ${elemento["data_movimentacao"]}   

@@ -9,7 +9,8 @@ Suite Teardown    Take Screenshot    Close Browser
 *** Test Cases ***
 Inserir movimentações sem informar dados obrigatórios
 
-    Realizar login         
+    Realizar login   
+    Prepara ambiente para movimentações      
     Acessar menu        Criar Movimentação
 
     ${movimentacoes}     Get Json    movimentacoes_falha.json   

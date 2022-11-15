@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Ações para testes de exclsão nas contas
+Documentation     Ações para testes de adionar e excluir contas
 
 Resource          ../../page_objects/dependencias.robot
 

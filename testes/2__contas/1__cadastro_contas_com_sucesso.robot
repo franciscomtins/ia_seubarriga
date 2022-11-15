@@ -10,7 +10,7 @@ Suite Teardown    Take Screenshot    Close Browser
 Inserir a conta com sucesso
     ${contas}          Get Json    contas.json
 
-    Realizar login         
+    Realizar login            
     Verificar se a conta já existe         ${contas["conta_1"]} 
     Acessar menu        Contas
     Selecionar opção    Adicionar

@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     Ações para realização de login com e sem sucesso. 
 
-Resource          ${EXECDIR}/page_objects/dependencias.robot
+Resource          ../../page_objects/dependencias.robot
 
 Suite Setup       Iniciar sessao
 Suite Teardown    Take Screenshot

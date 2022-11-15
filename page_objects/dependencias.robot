@@ -18,7 +18,7 @@ Resource   preparacoes_ambiente.robot
 *** Variables ***
 ${URL}             https://seubarriga.wcaquino.me/
 ${BROWSER}         chromium
-${HEADLESS}        false
+${HEADLESS}        true
 
 ## Variáveis de uso no sistema
 ${USUARIO_VALIDO}  %{SB_USUARIO} 
