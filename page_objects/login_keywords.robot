@@ -11,9 +11,13 @@ ${INFO_ERRADA}      Problemas com o login do usuário
 
 
 *** Keywords ***
-Insiro as credenciais
-    [Arguments]      ${email}      ${senha}
+Informo email 
+    [Arguments]      ${email}      
     Fill Text        id=email      ${email}
+    
+
+Informo a senha    
+    [Arguments]      ${senha}
     Fill Text        id=senha      ${senha}
 
 
@@ -34,7 +38,8 @@ Valido mensagem de login
     Get Text        css=.body-index    contains    ${mensagem}    
 
 Realizar login
-    Insiro as credenciais      ${USUARIO_VALIDO}    ${SENHA_VALIDA}  
+    Informo email      ${USUARIO_VALIDO}
+    Informo a senha    ${SENHA_VALIDA} 
     Clico em ENTRAR  
     Confirmo que estou logado no sistema
 
