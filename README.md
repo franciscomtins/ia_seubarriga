@@ -15,15 +15,15 @@
 #### 2.	Execução: ####
 *	Automatizar a execução dos cenários acima;
 *	Para os testes não automatizados, criar um registro de execução manual que contenha: Título do cenário, Evidências do resultado e Resultado (Passou ou Falhou).
-* Para executar ou não como headless basta alterar a variável “${HEADLESS}” do arquivo “dependencias.robot” como true ou false;
-* Usuário padrão para acesso poderá ser alterado no arquivo “dependencias.robot”, nas variáveis: ${USUARIO_VALIDO} e ${SENHA_VALIDA}
+* Para executar ou não como headless basta alterar a variável `${HEADLESS}` do arquivo `dependencias.robot` como true ou false;
+* Usuário padrão para acesso poderá ser alterado no arquivo “dependencias.robot”, nas variáveis: `${USUARIO_VALIDO}` e `${SENHA_VALIDA}`
 
 
 ### 🛠️ Tecnologias ###
 A automação de testes será realizada com Robotframwork. Para auxiliar no processo de automação, serão importadas as seguintes bibliotecas: 
 
 *	**Browser:** Principal responsável pelas Keywords usadas na automação;
-*	**FakerLibrary:** Usada na geração de dados “fakes” durante o processo de teste;
+*	**FakerLibrary:** Usada na geração de dados aleatórios durante o processo de teste;
 *	**OperatingSystem:** permite que várias tarefas relacionadas ao sistema operacional sejam executadas. 
 
 
