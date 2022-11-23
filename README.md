@@ -9,7 +9,8 @@
 
 * Foi Criado um Planejamento de testes, contendo o objetivo destes testes (manual e automatizadas);
 * Os testes foram classificados enquanto sua prioridade e severidade (Probabilidade x Impacto) de um bug ocorrer;
-* Para os testes automatizados considerados como prioritários foi adicionado a ` tag smoke`.
+* Para os testes automatizados considerados como prioritários foi adicionado a ` tag smoke`;
+* A suíte automatizada atualmente cobre 9 cenários de testes, com 16 casos de testes, dos quais 02 casos estão sendo reprovados, pois o sistema apresenta comportamento inadequado. 
 
 
 ### 🛠️ Tecnologias ###
