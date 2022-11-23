@@ -7,7 +7,7 @@
 
 ### 📝 Descrição do Projeto ###
 
-*	Foi Criado um Planejamento de testes, contendo o objetivo destes testes (manual e automatizadas);
+* Foi Criado um Planejamento de testes, contendo o objetivo destes testes (manual e automatizadas);
 * Os testes foram classificados enquanto sua prioridade e severidade (Probabilidade x Impacto) de um bug ocorrer;
 * Para os testes automatizados considerados como prioritários foi adicionado a ` tag smoke`.
 
@@ -15,16 +15,16 @@
 ### 🛠️ Tecnologias ###
 A automação de testes será realizada com Robotframwork. Para auxiliar no processo de automação, serão importadas as seguintes bibliotecas: 
 
-*	**Browser:** Principal responsável pelas Keywords usadas na automação;
-*	**FakerLibrary:** Usada na geração de dados aleatórios durante o processo de teste;
-*	**OperatingSystem:** permite que várias tarefas relacionadas ao sistema operacional sejam executadas. 
+* **Browser:** Principal responsável pelas Keywords usadas na automação;
+* **FakerLibrary:** Usada na geração de dados aleatórios durante o processo de teste;
+* **OperatingSystem:** permite que várias tarefas relacionadas ao sistema operacional sejam executadas. 
 
 
 ### 🚩 Preparação para executar a suíte ###  
-* Para execução da suíte, entende-se que o `Python`, `Robot Framework` e as dependências do `Node.js` estão devidamente instalados. 
-* Instalar o arquivo requirements contido na pasta `\SeuBarriga\testes`, como a instrução `pip install -r requirements.txt`
-* Antes de executar a suíte de testes, iniciar a library Browser com a instrução: `rfbrowser init`
-* Se a rfbrowser não for encontrada, tente: `python -m Browser.entry init`
+* Para execução da suíte, entende-se que o `Python`, `Robot Framework` e as dependências do `Node.js` estão devidamente instalados; 
+* Instalar o arquivo requirements contido na pasta `\SeuBarriga\testes`, com a instrução `pip install -r requirements.txt`;
+* Antes de executar a suíte de testes, iniciar a library Browser com a instrução: `rfbrowser init`;
+* Se a rfbrowser não for encontrada, tente: `python -m Browser.entry init`.
 
 
 ### 💡 Execução: ###
@@ -37,9 +37,9 @@ A automação de testes será realizada com Robotframwork. Para auxiliar no proc
 
 
 ### 🧑‍💻 A Library Browser foi escolhida por quê? ###
-* Para realizar testes web, retira a necessidade da instalação dos drives dos browsers. 
-* Visibilidade: A Library Browser utiliza a tecnologia baseada em JavaScript chamada Playwright, conectando-se diretamente com à API do navegador e tem o controle total do navegador e de seu conteúdo. O navegador também tem acesso ao tráfego de rede entre a página e o servidor e dá ao usuário a possibilidade de interagir com o servidor por meio de chamadas HTTP na mesma sessão do navegador.  
-* Velocidade: A Library Browser é rápida! Com a API direta para os navegadores, projetada para testes de alto desempenho, o feedback rápido é limitado apenas pela velocidade do objetivo de teste. Com seu conceito inovador de contexto, uma sessão limpa do navegador é iniciada em menos de 10 milissegundos!
+* Para realizar testes web, retira a necessidade da instalação dos drives dos browsers; 
+* Visibilidade: A Library Browser utiliza a tecnologia baseada em JavaScript chamada Playwright, conectando-se diretamente com à API do navegador e tem o controle total do navegador e de seu conteúdo. O navegador também tem acesso ao tráfego de rede entre a página e o servidor e dá ao usuário a possibilidade de interagir com o servidor por meio de chamadas HTTP na mesma sessão do navegador;  
+* Velocidade: A Library Browser é rápida! Com a API direta para os navegadores, projetada para testes de alto desempenho, o feedback rápido é limitado apenas pela velocidade do objetivo de teste. Com seu conceito inovador de contexto, uma sessão limpa do navegador é iniciada em menos de 10 milissegundos;
 * Confiabilidade: A Browser Library espera automaticamente pelos elementos da página e interage com seus quando estão prontos para integração. Os flaky tests são drasticamente reduzidos e a confiança na automação do teste aumenta. 
 
 
