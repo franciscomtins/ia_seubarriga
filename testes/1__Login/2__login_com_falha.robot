@@ -8,34 +8,37 @@ Suite Teardown    Take Screenshot
 
 *** Test Cases ***
 Realizar login sem informar Email e Senha
-    Insiro as credenciais      ${EMPTY}             ${EMPTY}  
+    Informo email               ${EMPTY} 
+    Informo a senha             ${EMPTY}  
     Clico em ENTRAR               
     Valido mensagem de login   ${SEM_EMAIL}
     Valido mensagem de login   ${SEM_SENHA}
     
 
 Realizar login sem informar Email
-    Insiro as credenciais     ${EMPTY}              ${SENHA_VALIDA}
+    Informo a senha           ${SENHA_VALIDA}
     Clico em ENTRAR               
     Valido mensagem de login  ${SEM_EMAIL}
 
 
 Realizar login sem informar Senha
-    Insiro as credenciais     ${USUARIO_VALIDO}     ${EMPTY}  
+    Informo email             ${USUARIO_VALIDO} 
     Clico em ENTRAR               
     Valido mensagem de login  ${SEM_SENHA}
 
 
 Realizar login com usuário valido e senha inválida
-    ${senha_fake}             FakerLibrary.Password   
-    Insiro as credenciais     ${USUARIO_VALIDO}     ${senha_fake} 
+    ${senha_fake}             FakerLibrary.Password 
+    Informo email             ${USUARIO_VALIDO}   
+    Informo a senha           ${senha_fake} 
     Clico em ENTRAR            
     Valido mensagem de login  ${INFO_ERRADA}
 
 
 Realizar login com email não cadastrado e senha válida
     ${email_fake}             FakerLibrary.Email 
-    Insiro as credenciais     ${email_fake}         ${SENHA_VALIDA}
+    Informo email             ${email_fake}        
+    Informo a senha           ${SENHA_VALIDA}
     Clico em ENTRAR                
     Valido mensagem de login  ${INFO_ERRADA}
 
