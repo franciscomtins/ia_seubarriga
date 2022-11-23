@@ -7,16 +7,9 @@
 
 ### 📝 Descrição do Projeto ###
 
-#### 1.	Planejamento: ####
-*	Criar um Planejamento de testes que contenha o objetivo destes testes (manual e automatizadas);
-*	Definição de prioridade que cada um desses cenários tem, avaliando a severidade (Probabilidade x Impacto) de um bug ocorrer;
-
-
-#### 2.	Execução: ####
-*	Automatizar a execução dos cenários acima;
-*	Para os testes não automatizados, criar um registro de execução manual que contenha: Título do cenário, Evidências do resultado e Resultado (Passou ou Falhou).
-* Para executar ou não como headless basta alterar a variável `${HEADLESS}` do arquivo `dependencias.robot` como true ou false;
-* Usuário padrão para acesso poderá ser alterado no arquivo “dependencias.robot”, nas variáveis: `${USUARIO_VALIDO}` e `${SENHA_VALIDA}`
+*	Foi Criado um Planejamento de testes, contendo o objetivo destes testes (manual e automatizadas);
+* Os testes foram classificados enquanto sua prioridade e severidade (Probabilidade x Impacto) de um bug ocorrer;
+* Para os testes automatizados considerados como prioritários foi adicionado a ` tag smoke`.
 
 
 ### 🛠️ Tecnologias ###
@@ -28,13 +21,19 @@ A automação de testes será realizada com Robotframwork. Para auxiliar no proc
 
 
 ### 🚩 Preparação para executar a suíte ###  
-* Instalar o pacote do Node.js, pois a Library Browser usa. 
-* Pode instalar baixando o instalador: https://nodejs.org/pt-br/#home-downloadhead
-* Ou usando Chocolatey: cinst nodejs.install
-* Ou usando Scoop: scoop install nodejs
-* Instalar o arquivo requirements contido na pasta “\SeuBarriga\testes”
-* Antes de executar a suíte de testes, iniciar a library Browser com a instrução: rfbrowser init
-* Se a rfbrowser não for encontrada, tente: python -m Browser.entry init
+* Para execução da suíte, entende-se que o `Python`, `Robot Framework` e as dependências do `Node.js` estão devidamente instalados. 
+* Instalar o arquivo requirements contido na pasta `\SeuBarriga\testes`, como a instrução `pip install -r requirements.txt`
+* Antes de executar a suíte de testes, iniciar a library Browser com a instrução: `rfbrowser init`
+* Se a rfbrowser não for encontrada, tente: `python -m Browser.entry init`
+
+
+#### 💡 Execução: ####
+
+* Para executar ou não como headless basta alterar a variável `${HEADLESS}` do arquivo `dependencias.robot` como true ou false;
+* Usuário padrão para acesso poderá ser alterado no arquivo “dependencias.robot”, nas variáveis: `${USUARIO_VALIDO}` e `${SENHA_VALIDA}`;
+* Para executar todo a suíte de teste, deve ser executada a instrução `robot -d .\results\ .\testes\`, a partir do diretório `\bck_seu_barriga\`. A pasta `.\results\`, caso não exista, será criada automaticamente e nesta serão armazenados os logs da execução da suíte;
+* Para executar um caso de teste específico, este deverá ser declarado na execução, por exemplo, caso deseje executar apenas o cenário de login com sucesso: ` robot -d .\results\ .\testes\1__login\1__login_com_sucesso.robot`;
+* Para executar os testes considerados como prioritários, deverá ser executada a instrução ` robot -i smoke -d .\results\ .\testes\1__login\1__login_com_sucesso.robot`.
 
 
 ### 🧑‍💻 A Library Browser foi escolhida por quê? ###
