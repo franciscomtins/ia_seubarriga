@@ -27,7 +27,7 @@ A automação de testes será realizada com Robotframwork. Para auxiliar no proc
 * Se a rfbrowser não for encontrada, tente: `python -m Browser.entry init`
 
 
-#### 💡 Execução: ####
+### 💡 Execução: ###
 
 * Para executar ou não como headless basta alterar a variável `${HEADLESS}` do arquivo `dependencias.robot` como true ou false;
 * Usuário padrão para acesso poderá ser alterado no arquivo “dependencias.robot”, nas variáveis: `${USUARIO_VALIDO}` e `${SENHA_VALIDA}`;
