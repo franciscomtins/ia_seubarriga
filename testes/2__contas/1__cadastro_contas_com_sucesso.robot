@@ -8,6 +8,8 @@ Suite Teardown    Take Screenshot    Close Browser
 
 *** Test Cases ***
 Inserir a conta com sucesso
+    [Tags]    smoke    
+    
     ${contas}          Get Json    contas.json
 
     Realizar login            

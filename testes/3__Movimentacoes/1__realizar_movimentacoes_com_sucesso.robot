@@ -9,7 +9,8 @@ Suite Teardown    Take Screenshot    Close Browser
 
 *** Test Cases ***
 Inserir movimentações com sucesso
-
+    [Tags]    smoke    
+    
     Realizar login 
     Prepara ambiente para movimentações
     Acessar menu        Criar Movimentação

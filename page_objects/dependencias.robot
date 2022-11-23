@@ -3,7 +3,7 @@ Documentation      Configurações, dependencias e keywords gerais do projeto
 
 ## Librarys importadas
 Library    Browser
-Library    DatabaseLibrary
+#Library    DatabaseLibrary
 Library    FakerLibrary    locale=pt_BR
 Library    OperatingSystem
 
@@ -18,7 +18,7 @@ Resource   preparacoes_ambiente.robot
 *** Variables ***
 ${URL}             https://seubarriga.wcaquino.me/
 ${BROWSER}         chromium
-${HEADLESS}        true
+${HEADLESS}        false
 
 ## Variáveis de uso no sistema
 ${USUARIO_VALIDO}  %{SB_USUARIO} 

@@ -1,4 +1,4 @@
 robotframework
 robotframework-browser
 webdrivermanager
-rfbrowser init
+

@@ -8,6 +8,8 @@ Suite Teardown    Take Screenshot
 
 *** Test Cases ***
 Realizar login com sucesso
+    [Tags]    smoke    
+    
     Insiro as credenciais      ${USUARIO_VALIDO}    ${SENHA_VALIDA}  
     Clico em ENTRAR  
     Confirmo que estou logado no sistema
