@@ -17,7 +17,7 @@
 *	Automatizar a execução dos cenários acima;
 *	Para os testes não automatizados, criar um registro de execução manual que contenha: Título do cenário, Evidências do resultado e Resultado (Passou ou Falhou).
 
-## Estrutura do Projeto
+### Estrutura do Projeto
 ```bash
 ia_seubarriga/
 ├─ datamodels/
@@ -49,6 +49,12 @@ ia_seubarriga/
 ├─ .gitignore
 ├─ README.md
 ```
+
+### Dados
+O projeto realiza a leitura de dados de arquivos json.Por não termos tido acesso ao banco de dados real da aplicação, foi decidido usar arquivos json como mock para validarmos os registros das entidades e operações realizadas sobre elas.
+
+### Page
+O projeto usa o modelo Page Object para capturar todos componentes relevantes da UI e funcionalidades da página web. 
 
 ### 🛠️ Tecnologias ###
 A automação de testes será realizada com Robotframwork. Para auxiliar no processo de automação, serão importadas as seguintes bibliotecas: 
