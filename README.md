@@ -1,8 +1,10 @@
 # ia_seubarriga
-<h1 align="center"> Bootcamp IA - Desafio intermediário - Automação de Testes</h1>
+<h1 align="center"> Bootcamp IA - Projeto Final - Grupo QualiDreams</h1>
 
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
+![Robot Framework](https://img.shields.io/badge/Robot%20Framework-000000?style=for-the-badge&logo=robot-framework&logoColor=white)
 
 
 ### 📝 Descrição do Projeto ###
