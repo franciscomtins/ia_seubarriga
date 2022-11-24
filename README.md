@@ -30,11 +30,11 @@ A automação de testes será realizada com Robotframwork. Para auxiliar no proc
 
 ### 💡 Execução: ###
 
-* Para executar ou não como headless basta alterar a variável `${HEADLESS}` do arquivo `dependencias.robot` como true ou false;
+* Para executar ou não como headless basta alterar a variável `${HEADLESS}` do arquivo `dependencias.robot` como `True` ou `False`;
 * Usuário padrão para acesso poderá ser alterado no arquivo “dependencias.robot”, nas variáveis: `${USUARIO_VALIDO}` e `${SENHA_VALIDA}`;
 * Para executar todo a suíte de teste, deve ser executada a instrução `robot -d .\results\ .\testes\`, a partir do diretório `\bck_seu_barriga\`. A pasta `.\results\`, caso não exista, será criada automaticamente e nesta serão armazenados os logs da execução da suíte;
 * Para executar um caso de teste específico, este deverá ser declarado na execução, por exemplo, caso deseje executar apenas o cenário de login com sucesso: ` robot -d .\results\ .\testes\1__login\1__login_com_sucesso.robot`;
-* Para executar os testes considerados como prioritários, deverá ser executada a instrução ` robot -i smoke -d .\results\ .\testes\1__login\1__login_com_sucesso.robot`.
+* Para executar os testes considerados como prioritários, deverá ser executada a instrução ` robot -i smoke -d .\results\ .\testes\`.
 
 
 ### 🧑‍💻 A Library Browser foi escolhida por quê? ###
