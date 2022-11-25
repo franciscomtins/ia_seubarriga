@@ -47,10 +47,10 @@ ia_seubarriga/
 ├─ README.md
 ```
 
-### Dados
-O projeto realiza a leitura de dados de arquivos json.Por não termos tido acesso ao banco de dados real da aplicação, foi decidido usar arquivos json como mock para validarmos os registros das entidades e operações realizadas sobre elas.
+### Dados ### 
+O projeto realiza a leitura de dados de arquivos json. Por não termos tido acesso ao banco de dados real da aplicação, foi decidido usar arquivos json como mock para validarmos os registros das entidades e operações realizadas sobre elas.
 
-### Page
+### Page ### 
 O projeto usa o modelo Page Object para capturar todos componentes relevantes da UI e funcionalidades da página web. 
 
 ### 🛠️ Tecnologias ###
