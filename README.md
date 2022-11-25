@@ -14,6 +14,44 @@
 * Para os testes automatizados considerados como prioritários foi adicionado a ` tag smoke`;
 * A suíte automatizada atualmente cobre 9 cenários de testes, com 16 casos de testes, dos quais 02 casos estão sendo reprovados, pois o sistema apresenta comportamento inadequado. 
 
+### Estrutura do Projeto
+```bash
+ia_seubarriga/
+├─ datamodels/
+│  ├─ contas.json
+│  ├─ movimentacoes.json
+│  ├─ movimentacoes_falha.json
+│  ├─ resumo_mensal.json
+├─ page_objects/
+│  ├─ contas_keywords.robot
+│  ├─ dependencias.robot
+│  ├─ login_keywords.robot
+│  ├─ movimentacoes_keywords.robot
+│  ├─ preparacoes_ambiente.robot
+├─ testes/
+│  ├─ 1__login/
+│  │  ├─ 1__login_com_sucesso.robot
+│  │  ├─ 2__login_com_falha.robot
+│  ├─ 2__contas/
+│  │  ├─ 1__cadastro_contas_com_sucesso.robot
+│  │  ├─ 2__cadastro_contas_com_falha.robot
+│  │  ├─ 3__editar_contas.robot
+│  │  ├─ 4__exclusao_contas.robot
+│  ├─ 3__movimentacoes/
+│  │  ├─ 1__realizar_movimentacoes_com_sucesso.robot
+│  │  ├─ 2__realizar_movimentacoes_com_falha.robot
+│  ├─ 4__resumo_mensal/
+│  │  ├─ 1__Validacao_resumo_mensal.robot	
+│  ├─ requirements.txt
+├─ .gitignore
+├─ README.md
+```
+
+### Dados
+O projeto realiza a leitura de dados de arquivos json.Por não termos tido acesso ao banco de dados real da aplicação, foi decidido usar arquivos json como mock para validarmos os registros das entidades e operações realizadas sobre elas.
+
+### Page
+O projeto usa o modelo Page Object para capturar todos componentes relevantes da UI e funcionalidades da página web. 
 
 ### 🛠️ Tecnologias ###
 A automação de testes será realizada com Robotframwork. Para auxiliar no processo de automação, serão importadas as seguintes bibliotecas: 
