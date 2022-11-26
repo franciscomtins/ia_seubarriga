@@ -49,3 +49,4 @@ A automação de testes será realizada com Robotframwork. Para auxiliar no proc
 * [Library Browser - Keywords](https://marketsquare.github.io/robotframework-browser/Browser.html)
 * [Library OperatingSystem - Keywords](https://robotframework.org/robotframework/latest/libraries/OperatingSystem.html)
 * [Robot Framework - Instalação FakerLibrary](https://pypi.org/project/robotframework-faker)
+
