@@ -32,5 +32,8 @@
     },
     "conta_11":{
         "nome": "Movimentos"
-    }    
+    },
+    "conta_12":{
+        "nome": "Banco Safra"
+    }
 }
