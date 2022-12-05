@@ -29,19 +29,21 @@ ia_seubarriga/
 │  ├─ movimentacoes_keywords.robot
 │  ├─ preparacoes_ambiente.robot
 ├─ testes/
-│  ├─ 1__login/
+│  ├─ 1__Login/
 │  │  ├─ 1__login_com_sucesso.robot
 │  │  ├─ 2__login_com_falha.robot
-│  ├─ 2__contas/
+│  ├─ 2__Contas/
 │  │  ├─ 1__cadastro_contas_com_sucesso.robot
 │  │  ├─ 2__cadastro_contas_com_falha.robot
 │  │  ├─ 3__editar_contas.robot
 │  │  ├─ 4__exclusao_contas.robot
-│  ├─ 3__movimentacoes/
+│  ├─ 3__Movimentacoes/
 │  │  ├─ 1__realizar_movimentacoes_com_sucesso.robot
 │  │  ├─ 2__realizar_movimentacoes_com_falha.robot
-│  ├─ 4__resumo_mensal/
-│  │  ├─ 1__Validacao_resumo_mensal.robot	
+│  ├─ 4__Resumo_Mensal/
+│  │  ├─ 1__Validacao_resumo_mensal.robot
+│  ├─ 5__Home/
+│  │  ├─ 1__validacao_home.robot	
 │  ├─ requirements.txt
 ├─ .gitignore
 ├─ README.md
@@ -89,3 +91,4 @@ A automação de testes será realizada com Robotframwork. Para auxiliar no proc
 * [Library Browser - Keywords](https://marketsquare.github.io/robotframework-browser/Browser.html)
 * [Library OperatingSystem - Keywords](https://robotframework.org/robotframework/latest/libraries/OperatingSystem.html)
 * [Robot Framework - Instalação FakerLibrary](https://pypi.org/project/robotframework-faker)
+

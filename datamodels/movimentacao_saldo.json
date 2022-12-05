@@ -1,0 +1,24 @@
+[
+    {
+        "test_case": "1 - Mov. Receita - Sit. Pago",
+        "tipo_movimentacao": "Receita",
+        "data_movimentacao": "01/11/2022",
+        "data_pagamento": "06/11/2022",
+        "descricao": "1 - Mov. Receita - Sit. Pago",
+        "interessado": "Fco Martins 1",
+        "valor": "100.00",
+        "conta": "Banco Safra",
+        "situacao": "Pago"
+    },
+    {
+        "test_case": "3 - Mov. Despesa - Sit. Pago",
+        "tipo_movimentacao": "Despesa",
+        "data_movimentacao": "03/11/2022",
+        "data_pagamento": "08/11/2022",
+        "descricao": "3 - Mov. Despesa - Sit. Pago",
+        "interessado": "Fco Martins 3",
+        "valor": "-15.00",
+        "conta": "Banco Safra",
+        "situacao": "Pago"
+    }
+]
